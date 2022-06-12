@@ -1,0 +1,13 @@
+@mixin centeringText(){
+    justify-content: center;
+    text-align: center;
+}
+@mixin centeringDiv{
+    justify-content: center;
+    align-items: baseline;
+}
+@function border($width, $color, $radius){
+    $border: solid $width $color;
+    $border-radius: $radius;
+    @return $border;
+}

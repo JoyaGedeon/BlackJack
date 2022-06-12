@@ -1,0 +1,92 @@
+@import './-variables.scss';
+@import './-functions.scss';
+
+.game{
+    width: 720px;
+    margin: $defaultMargin;
+    background: $gameBackground;
+    border: solid 3px ;
+    @include centeringText;
+    min-height: 530px;
+    .btn{
+        border: none;
+        padding: 10px 30px;
+        border-radius:10px;
+        cursor: $cursor;
+        &:hover{
+            background: $btnHover;
+        }
+    }
+    h3{
+        padding: 4px;
+        border-bottom: border(3px, #222, none);
+        color: white;
+    }
+    .game-body{
+        padding: 20px;  
+    }
+    .game-options{
+        @include centeringText;
+    }
+    .card{
+        @include centeringText;
+        width: 50px;
+        height: 80px;
+        padding: 10px;
+        border: border(1px, #808080, 10px);
+        background: white;
+        display: $defaultDisplay;
+        // border-radius: 10px;
+        font-size: 10pt;
+        margin: 3px;
+        border:border(3px, black, none)
+    }
+    .status{
+        display: $defaultDisplay;
+        background: rgb(133, 114, 150);
+        border: border(5px, white, 10px);
+        // border-radius: 10px;
+        padding: 5px 20px;
+        margin: $defaultMargin;
+        margin-top: 10px;
+        display:none;
+    }
+    .players{
+        width: 500px;
+        margin: $defaultMargin;
+        margin-top: 20px;
+        @include centeringText;
+    }
+    .player{
+        width: 40%;
+        border: border(5px, #f5f5f5, 10px);
+        // border-radius: 10px;
+        padding: 10px;
+        display: $defaultDisplay;
+        margin:1%;
+        vertical-align: top;
+        background:#f5f5f5;
+    }
+    .player.active{
+        border: border(5px, #222, none) ;
+    }
+    .points{
+        @include centeringText;
+        font-size: 20pt;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .deck{
+        float:left;
+        background: white;
+        color:#222;
+        padding: 10px;
+        border-radius:10px;
+        border: double 5px;
+    }
+    .btn{
+        background:#222;
+        color:white !important;
+        border-radius:0px;
+    }
+}
